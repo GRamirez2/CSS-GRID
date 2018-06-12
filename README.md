@@ -9,4 +9,4 @@ My comments on what each thing does is usually commented above the code and begi
 
 ### To see it in action I usually cd into the repo and use browser-sync to see my changes live
 If you have it installed globally
-```browser-sync start --server --file "."```
+```browser-sync start --server --files "."```
