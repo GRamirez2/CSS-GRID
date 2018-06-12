@@ -1,0 +1,32 @@
+  /* ELEMENT PLACEMENT */
+    .element_container {
+        display: grid;
+
+  /* -- define column width, fr, over % and pixels, because  conflicts with margins and padding -- */
+
+        /* grid-template-columns: 3fr 3fr 3fr; */
+  /* -- short cut, same as above -- */
+        /* grid-template-columns: repeat(3, 1fr); */
+
+        /* grid-auto-rows: 200px; */
+  /* -- auto adjust for longer content in the row -- */
+        /* grid-auto-rows: minmax(100px, auto); */
+
+      /* column gap */
+        /* grid-column-gap: .5em; */
+
+      /* row gap */
+        /* grid-row-gap: .5em; */
+  /* -- short cut for row and col gap if equal -- */
+        /* grid-gap: .5em; */
+    }
+
+  /* MEDIA QUERY FOR ELEMENT PLACEMENT */
+    @media only screen and (max-width: 600px){
+      .element_container {
+        grid-template-columns: 1fr;
+      }
+      h1::after {
+        content: " -- Width 600px";
+      }
+    }

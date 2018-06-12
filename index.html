@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Grid</title>
+  <link rel="stylesheet" href="element.css">
+  <link rel="stylesheet" href="nested.css">
+  <link rel="stylesheet" href="text.css">
+  <link rel="stylesheet" href="span.css">
+  <style>
+/* TINT DIVS FOR ILLUSTRATION */
+      .element_container > div,
+      .text_container > div,
+      .nested_container > div,
+      .span_container > div {
+        background: lightgray;
+        padding: .5em;
+      }
+  
+      .element_container > div:nth-child(odd),
+      .text_container > div:nth-child(odd),
+      .nested_container > div:nth-child(odd),
+      .span_container > div:nth-child(odd) {
+        background: grey;
+      }
+  </style>
+</head>
+<body>
+  <!-- Element Placement -->
+  <h1>Element Placement</h1>
+  <section class="element_container=OFF">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </section>
+
+  <!-- NESTED ELEMENTS -->
+  <h1>Nested Elements</h1>
+  <section class="nested_container=OFF">
+    <div>1</div>
+    <div>2
+      <div class="nested">
+          <div>nested 1</div>
+          <div>nested 2</div>
+          <div>nested 3</div>
+          <div>nested 4</div>
+          <div>nested 5</div>
+          <div>nested 6</div>
+          <div>nested 7</div>
+          <div>nested 8</div>
+          <div>nested 9</div>
+        </div>
+    </div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </section>
+
+<!-- TEXT PLACEMENT -->
+  <h1>Text Placement</h1>
+  <section class="text_container=OFF">
+    <div class="text1">1 Put more text here</div>
+    <div class="text2">2 Text Here</div>
+    <div class="text3">3 Text Here</div>
+    <div class="text4">4 Text Here</div>
+    <div class="text5">5 Text Here</div>
+    <div class="text6">6 Text Here</div>
+  </section>
+
+
+
+<!-- ELEMENT SPAN -->
+  <h1>Element Span</h1>
+  <section class="span_container=OFF">
+    <div class="span1">1</div>
+    <div class="span2">2</div>
+    <div class="span3">3</div>
+    <div class="span4">4</div>
+    <div class="span5">5</div>
+    <div class="span6">6</div>
+  </section>
+  
+</body>
+</html>
