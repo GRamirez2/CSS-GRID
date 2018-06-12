@@ -11,7 +11,7 @@
         align-items: stretch; 
   
       }
-  /* these will override the parent control */
+  /* -- these will override the parent control -- */
       .text1 {
         /* align-self: start; */
       }

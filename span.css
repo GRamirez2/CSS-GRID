@@ -1,4 +1,4 @@
-      /* justify and aligning items */
+
       .span_container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -20,7 +20,7 @@
         
       }
       .span4 {
-        /* overlap */
+    /* overlap */
         /* grid-column: 1/2; */
         /* grid-row: 2/4; */
         
@@ -33,7 +33,7 @@
       }
 
       .span6 {
-        /* overlap */
+    /* overlap */
         /* grid-column: 2/4; */
 
         /* grid-row: 3/5; */
